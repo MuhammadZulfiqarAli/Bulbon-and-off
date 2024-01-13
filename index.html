@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>bulbon and off</title>
+</head>
+<style>
+      *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+      }
+#container {
+      background-color: antiquewhite;
+      width: 100%;
+      height: 700px;
+
+}
+#bulb {
+      margin-left: 550px;
+      margin-top: 70px;
+
+}
+
+.btn {
+      margin-left: 540px;
+      margin-top: 40px;
+}
+
+button {
+      padding: 14px;
+      margin: 3px;
+      border-radius: 10px;
+      background-color: rgb(47, 179, 47);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: aliceblue;
+      font-size: larger;
+
+}
+</style> 
+<body>
+
+      <div  id="container">
+                  <div> <img id="bulb" src="picture/pic_bulboff.gif" alt="" width="190"></div>
+            
+                  <div class="btn">
+                        <button onclick="bulbOn( )">Turn on </button>
+            
+                       <button onclick="bulboff()">Turn off</button>
+                </div>
+                  </div>
+
+
+
+      <script>
+  function bulbOn() {
+                  const on = document.getElementById("bulb")
+                  console.log(on);
+                  on.setAttribute("src", "picture/pic_bulbon.webp")
+            }
+
+            function bulboff() {
+                  const on = document.getElementById("bulb")
+                  console.log(on);
+                  on.setAttribute("src", "picture/pic_bulboff.gif")
+            } 
+      </script>
+</body>
+</html>
